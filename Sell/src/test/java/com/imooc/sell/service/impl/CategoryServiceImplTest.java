@@ -1,4 +1,4 @@
-package com.imooc.sell.impl;
+package com.imooc.sell.service.impl;
 
 import com.imooc.sell.dataobject.ProductCategory;
 import org.junit.Assert;
@@ -10,9 +10,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
