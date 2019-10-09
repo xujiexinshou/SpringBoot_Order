@@ -1,4 +1,4 @@
-package com.imooc.sell.utils;
+package com.imooc.sell.utils.serializer;
 
 import java.util.Random;
 

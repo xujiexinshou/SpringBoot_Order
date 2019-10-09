@@ -12,7 +12,10 @@ server:
   servlet:
     context-path: /sell
 
-
 wechat:
   mpAppId: wx2d6b25e9b6415cac
   mpAppSecret: 5fc4e66449958770685d8a41a8504346
+  mchId: 1409146202
+  mchKey: c976503d34ca432c601361f969fd8d85
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl:

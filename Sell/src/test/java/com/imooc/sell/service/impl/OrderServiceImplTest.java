@@ -32,9 +32,9 @@ public class OrderServiceImplTest {
     @Test
     public void create() {
         OrderDTO orderDTO =new OrderDTO();
-        orderDTO.setBuyerName("廖师兄");
-        orderDTO.setBuyerAddress("慕课网");
-        orderDTO.setBuyerPhone("123456789012");
+        orderDTO.setBuyerName("徐杰");
+        orderDTO.setBuyerAddress("google");
+        orderDTO.setBuyerPhone("3523819417915");
         orderDTO.setBuyerOpenid(BUYER_OPENID);
 
         List<OrderDetail> orderDetailList = new ArrayList<>();
@@ -89,4 +89,14 @@ public class OrderServiceImplTest {
         OrderDTO result = orderService.cancel(orderDTO);
         Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(), result.getOrderStatus());
     }
+
+    @Test
+    public void list() {
+        PageRequest request = new PageRequest(0, 2);
+        orderService.findList(request);
+        Page<OrderDTO> orderDTOPage = orderService.findList(request);
+//        Assert.assertNotEquals(0, orderDTOPage.getTotalElements());
+        Assert.assertTrue("查询所有的订单列表",orderDTOPage.getTotalElements() < 0);
+    }
+
 }

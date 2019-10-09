@@ -8,7 +8,7 @@ import com.imooc.sell.execption.SellException;
 import com.imooc.sell.form.OrderForm;
 import com.imooc.sell.service.BuyerService;
 import com.imooc.sell.service.OrderService;
-import com.imooc.sell.utils.ResultVOUtil;
+import com.imooc.sell.utils.serializer.ResultVOUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
